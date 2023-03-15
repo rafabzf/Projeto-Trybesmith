@@ -6,4 +6,6 @@ const routerProduct = express.Router();
 
 routerProduct.post('/', controllerProduct.productCreate);
 
+routerProduct.get('/', controllerProduct.allProducts);
+
 export default routerProduct;

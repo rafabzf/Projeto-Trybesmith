@@ -7,6 +7,13 @@ const productCreate = async (product: IProduct) => {
   return resProduct;
 };
 
+const allProducts = async () => {
+  const resProduct = await modelProduct.allProducts();
+
+  return resProduct;
+};
+
 export default {
   productCreate,
+  allProducts,
 };
