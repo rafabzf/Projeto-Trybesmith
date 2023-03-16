@@ -8,8 +8,14 @@ interface IUser {
   id?: number;
   username: string;
   vocation: string;
-  level: string;
+  level: number;
   password: string;
 }
 
-export { IProduct, IUser };
+interface Order {
+  id: number,
+  userId: number,
+  productsIds: number[],
+}
+
+export { IProduct, IUser, Order };
