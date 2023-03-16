@@ -4,7 +4,7 @@ interface IProduct {
   amount: string;
 }
 
-interface Product {
+interface IUser {
   id?: number;
   username: string;
   vocation: string;
@@ -12,4 +12,4 @@ interface Product {
   password: string;
 }
 
-export { IProduct, Product };
+export { IProduct, IUser };
